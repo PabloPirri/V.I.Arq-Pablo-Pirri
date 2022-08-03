@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos.css">
+    <title>V.I. - Arq / Contactanos</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="../img/Logo nav y Footer.jpg" class="nav__logo"alt="Logo">
+            <h1 class="titulo_logo">V.I. - Arq</h1>
+            <ul class="nav__links">
+                <li><a href="../index.html" class="nav__link"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                <li><a href="Diseño.html" class="nav__link"><i class="fa-solid fa-palette"></i>Diseño</a></li>
+                <li><a href="Proyectos.html" class="nav__link"><i class="fa-solid fa-trowel-bricks"></i>Proyectos</a></li>
+                <li><a href="Sobre_Nosotros.html" class="nav__link"><i class="fa-solid fa-helmet-safety"></i>Sobre Nosotros</a></li>
+                <li><a href="Contactos.html" class="nav__link nav__link--color"><i class="fa-solid fa-address-book"></i>Contactos</a></li>
+            </ul>
+            <a href="#nav" class="menu-mobile"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="menu-close"><i class="fa-solid fa-xmark"></i></a>
+        </nav>
+    </header>
+    <main class="main_contacto">
+        <section class="section_newsletter">
+            <img src="../img/Newsletter.jpg" alt="Newsletter">
+            <h2>Suscribirse al newsletter</h2>
+            <form action="../form.php" method="post">
+                <input type="email" name="email" id="" placeholder="Ingresa tu Email" required>
+                <input type="submit" value="Suscribirme">
+            </form>
+        </section>
+        <section class="section_cv">
+            <img src="../img/CV.jpg" alt="">
+            <h2>Queres trabajar con Nosotros?</h2>
+            <form action="cv.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="Nombre y Apellido" id="" placeholder="Nombre y Apellido">
+                <input type="email" name="email" id="" placeholder="Ingresa tu Email" required>
+                <input type="file" name="adjunto" required> 
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <aside>
+        <section class="section_mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52607.020375805645!2d-58.772181599999996!3d-34.50443645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc981b3f6c41cf%3A0x39d81df507812ac2!2sJos%C3%A9%20C.%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656911694035!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, error, neque quidem dolor voluptates odit veniam praesentium ad necessitatibus officiis qui eaque ducimus saepe earum maxime deserunt nam labore animi? Neque nemo culpa quas ex placeat quae magnam obcaecati quam sit hic laboriosam voluptas ad necessitatibus dignissimos laudantium, doloremque aperiam.</p>
+        </section>
+        <section class="section_redes">
+            <h2>Seguinos en nuestras redes</h2>
+            <ul>
+                <li><a href="https://es-la.facebook.com/" target="_BLANK">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_BLANK">Instagram</a></li>
+                <li><a href="https://ar.linkedin.com/" target="_BLANK">Linkedin</a></li>
+            </ul>
+        </section>
+    </aside>
+    <footer class="footer">
+        <img src="../img/Logo Nav y Footer.jpg" class="logo" alt="Logo">
+        <h4 class="titulo_logo_footer">V.I. - Arq</h4>
+        <a class="copyright" href="" target="_BLANK"> &copy; PP Web-Design</a> 
+    </footer>
+</body>
+</html>
