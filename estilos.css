@@ -5,7 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none; 
+    text-decoration: none;
+}
+body{
+    background-color: #f0f4f5
 }
         /* Barra de Navegacion */
 
@@ -146,7 +149,8 @@
 }
 /* ---------------------------------------- */
             /* Pagina 3 Proyectos */
-/* ---------------------------------------- */        
+/* ---------------------------------------- */ 
+
 /* .main_proyectos{
     padding-top:75px;
     max-width: 100vw;
@@ -172,7 +176,7 @@
         flex-direction: column;
         align-items: flex-end;
     } */
-    .main_index{
+    .main_index .contain{
         flex-direction: column;
         max-width: 80vw;
     }
