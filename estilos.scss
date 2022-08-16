@@ -1,4 +1,10 @@
-        /* Reset universal */
+$colorPrincipal:#f0f4f5;
+$colorLogo: #2d3fa7;
+
+$fuenteLogo1: font-family 'Splash';
+$fuenteLogo2: font-family 'Square Peg';
+
+/* Reset universal */
 
 *{
     margin: 0;
@@ -8,20 +14,20 @@
     text-decoration: none;
 }
 body{
-    background-color: #f0f4f5;
+    background-color: $colorPrincipal;
 }
         /* Barra de Navegacion */
 
 .titulo_logo{
-    font-family: 'Splash';
-    color: #2d3fa7;
+    font-family:$fuenteLogo1;
+    color: $colorLogo;
 }
 
 .navbar{
-    background-color: #f0f4f5
+    background-color: $colorPrincipal
 }
 .navbar-light .navbar-brand{
-    color: #2d3fa7;
+    color: $colorLogo;
     font-size: 2.2rem;
 }
 
@@ -31,7 +37,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: #f0f4f5;
+    background-color:$colorPrincipal;
 }
 
 .section_1_index{
@@ -42,15 +48,15 @@ body{
 }
 
 .imagen{
-    background-color: #f0f4f5;
+    background-color: $colorPrincipal;
     flex-wrap: wrap;
     
 }
 .titulo_index {
     left: 39%;
-    font-family: 'Splash';
+    font-family: $fuenteLogo1;
     font-size: 2.1rem;
-    color: #2d3fa7;
+    color: $colorLogo;
     background: #ffffff93;
     text-align: end;
     padding-right: 3rem;
@@ -59,8 +65,8 @@ body{
 
 .subtitulo_index{
     left: 39%;
-    font-family: 'Square Peg', cursive;
-    color: #2d3fa7;
+    font-family: $fuenteLogo2, cursive;
+    color: $colorLogo;
     font-size: 1.5rem;
     background: #ffffff93;
     text-align: end;
@@ -69,21 +75,21 @@ body{
 }
 
 .section_2_index{
-    background-color: #f0f4f5;
+    background-color: $colorPrincipal;
     flex: 1 1 auto;
     flex-direction: column;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     line-height: 1.7rem;
     text-align: center;
-    color: #2d3fa7;
+    color: $colorLogo;
     padding: 110px 20px 77px 20px;
 }
 
         /* Footer */
 .footer{
     display: flex;
-    background-color: #f0f4f5;
+    background-color:$colorPrincipal;
     width: 100%;
     height: 76px;
     align-content: center;
@@ -95,15 +101,15 @@ body{
     flex: 1;
     display: inline-block;
     padding: 1rem;
-    font-family: 'Splash';
-    color: #2d3fa7; 
+    font-family: $fuenteLogo1;
+    color: $colorLogo; 
 }
 
 .copyright{
     display: flex;
     flex: 5;
     justify-content: flex-end;
-    background: #f0f4f5;
+    background: $colorPrincipal;
     align-items: center;
     padding: 1rem
     
