@@ -1,0 +1,250 @@
+        /* Reset universal */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #f0f4f5;
+}
+        /* Barra de Navegacion */
+
+.titulo_logo{
+    font-family: 'Splash';
+    color: #2d3fa7;
+}
+
+.navbar{
+    background-color: #f0f4f5
+}
+.navbar-light .navbar-brand{
+    color: #2d3fa7;
+    font-size: 2.2rem;
+}
+
+            /* Main Index */
+
+.main_index{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f4f5;
+}
+
+.section_1_index{
+    padding: 110px 20px 77px 20px;
+    flex: 2 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen{
+    background-color: #f0f4f5;
+    flex-wrap: wrap;
+    
+}
+.titulo_index {
+    left: 39%;
+    font-family: 'Splash';
+    font-size: 2.1rem;
+    color: #2d3fa7;
+    background: #ffffff93;
+    text-align: end;
+    padding-right: 3rem;
+    margin-top: -121px;
+}
+
+.subtitulo_index{
+    left: 39%;
+    font-family: 'Square Peg', cursive;
+    color: #2d3fa7;
+    font-size: 1.5rem;
+    background: #ffffff93;
+    text-align: end;
+    padding-right: 4rem;
+    
+}
+
+.section_2_index{
+    background-color: #f0f4f5;
+    flex: 1 1 auto;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: #2d3fa7;
+    padding: 110px 20px 77px 20px;
+}
+
+        /* Footer */
+.footer{
+    display: flex;
+    background-color: #f0f4f5;
+    width: 100%;
+    height: 76px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_logo_footer{    
+    flex: 1;
+    display: inline-block;
+    padding: 1rem;
+    font-family: 'Splash';
+    color: #2d3fa7; 
+}
+
+.copyright{
+    display: flex;
+    flex: 5;
+    justify-content: flex-end;
+    background: #f0f4f5;
+    align-items: center;
+    padding: 1rem
+    
+}
+/* ---------------------------------------- */
+         /* Pagina 2 Diseño */
+/* ---------------------------------------- */
+
+.main_diseño{
+    padding-top:75px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+.Img_diseño{
+    margin: 10px;
+}
+.section_diseño_1{
+    background: #ffffff93;
+    display: grid;
+    justify-items: center;
+}
+
+.texto_diseño_1{
+    background: #ffffff93;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.section_diseño_2{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.texto_diseño_2{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+/* ---------------------------------------- */
+            /* Pagina 3 Proyectos */
+/* ---------------------------------------- */ 
+
+/* .main_proyectos{
+    padding-top:75px;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+} */
+/* ---------------------------------------- */
+            /* Pagina 4 Sobre nosotros */
+/* ---------------------------------------- */ 
+
+.main_nosotros .card-img-top{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
+
+        /* ---- Responsive Mobile Index ---- */
+
+@media only screen and (min-width: 420px) and (max-width: 768px){
+    /* .nav__links{
+        flex-direction: column;
+        align-items: flex-end;
+    } */
+    .main_index .contain{
+        flex-direction: column;
+        max-width: 80vw;
+    }
+    .imagen{
+        max-width: 90vw;
+    }
+    .section_2_index{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+         /*Mobile --- Diseño  */
+    .main_diseño{
+        grid-template-columns: 1fr;
+        max-width: 80vw;
+    }
+    
+    
+        /*Mobile --- Proyectos  */
+    .main_proyectos{
+        padding:50px 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        }
+
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 425px){
+
+                    /*Mobile --- Index  */
+    .nav__links{
+        flex-direction: column;
+        justify-content: flex-end;
+        
+    }
+    .nav__link i{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .main_index{
+        flex-direction: column;
+        max-width: 80vw;
+
+    }
+    .imagen{
+        max-width: 80vw;
+    }
+    .section_1_index{
+        align-items: center;
+        justify-content: center;
+    }
+    .section_2_index{
+        background-color: #f0f4f5;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+    
+                    /*Mobile --- Diseño  */
+    .main_diseño{
+        grid-template-columns: 1fr;
+        max-width: 80vw;
+    }
+                    /*Mobile --- Proyectos  */
+
+    .main_proyectos{
+        padding:50px 0;
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+}
