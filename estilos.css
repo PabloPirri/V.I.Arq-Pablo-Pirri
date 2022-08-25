@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*---- Variables Color ----*/
+/*---- Variables Fuentes ----*/
+/*---- MAP ----*/
 /* Reset universal */
 * {
   margin: 0;
@@ -14,7 +17,7 @@ body {
 
 /* Barra de Navegacion */
 .titulo_logo {
-  font-family: font-family "Splash";
+  font-family: "Splash";
   color: #2d3fa7;
 }
 
@@ -49,7 +52,7 @@ body {
 
 .titulo_index {
   left: 39%;
-  font-family: font-family "Splash";
+  font-family: "Splash";
   font-size: 2.1rem;
   color: #2d3fa7;
   background: rgba(255, 255, 255, 0.5764705882);
@@ -60,7 +63,7 @@ body {
 
 .subtitulo_index {
   left: 39%;
-  font-family: font-family "Square Peg", cursive;
+  font-family: "Square Peg", cursive;
   color: #2d3fa7;
   font-size: 1.5rem;
   background: rgba(255, 255, 255, 0.5764705882);
@@ -84,7 +87,7 @@ body {
 .footer {
   display: flex;
   background-color: #f0f4f5;
-  width: 100%;
+  width: 100vw;
   height: 76px;
   align-content: center;
   justify-content: center;
@@ -94,8 +97,9 @@ body {
 .titulo_logo_footer {
   flex: 1;
   display: inline-block;
+  flex-wrap: wrap;
   padding: 1rem;
-  font-family: font-family "Splash";
+  font-family: "Splash";
   color: #2d3fa7;
 }
 
@@ -152,29 +156,135 @@ body {
 /* ---------------------------------------- */
 /* Pagina 3 Proyectos */
 /* ---------------------------------------- */
-/* .main_proyectos{
-    padding-top:75px;
-    max-width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-} */
+.titulo_proyecto {
+  text-align: center;
+  font-family: "Square Peg", cursive;
+  font-size: 3em;
+  color: #2d3fa7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+  filter: invert(108%);
+}
+
+.carousel-item img {
+  padding-top: 5px;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel-item img h5 {
+  background-color: #2d3fa7;
+}
+
 /* ---------------------------------------- */
 /* Pagina 4 Sobre nosotros */
 /* ---------------------------------------- */
-.main_nosotros .card-img-top {
-  height: 500px;
-  width: 500px;
+.titulo_sobre_nosotros {
+  text-align: center;
+  font-family: "Square Peg", cursive;
+  font-size: 3em;
+  color: #2d3fa7;
+}
+
+.main_nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f4f5;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.card .front h3 {
+  position: absolute;
+  font-family: "Square Peg", cursive;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #2d3fa7;
+  padding: 15px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
 /* ---- Responsive Mobile Index ---- */
 @media only screen and (min-width: 420px) and (max-width: 768px) {
-  /* .nav__links{
-      flex-direction: column;
-      align-items: flex-end;
-  } */
   .main_index .contain {
     flex-direction: column;
     max-width: 80vw;
