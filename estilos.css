@@ -283,6 +283,155 @@ body {
   transform: perspective(600px) rotateY(360deg);
 }
 
+/* ---- Pagina 5 Contactos ---- */
+.main_contacto {
+  width: 100vh;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: "newsletter mapa" "cv redes";
+  gap: 10px;
+}
+
+.section_newsletter {
+  width: 500px;
+  min-width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  grid-template-areas: newsletter;
+}
+.section_newsletter img {
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 30px;
+}
+.section_newsletter h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Square Peg";
+  color: #2d3fa7;
+}
+.section_newsletter form input {
+  display: block;
+  margin: auto;
+  height: 36px;
+  width: 80%;
+  padding-left: 10px;
+  color: #2d3fa7;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  border-radius: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.section_newsletter form .btn {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  width: 75%;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.section_cv {
+  width: 500px;
+  min-width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  grid-template-areas: cv;
+}
+.section_cv img {
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 30px;
+}
+.section_cv h2 {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Square Peg";
+  color: #2d3fa7;
+}
+.section_cv form input {
+  display: block;
+  margin: auto;
+  height: 36px;
+  width: 80%;
+  padding-left: 10px;
+  color: #2d3fa7;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  border-radius: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.section_cv form .btn {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  width: 75%;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.section_mapa {
+  width: 500px;
+  min-width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  grid-template-areas: mapa;
+}
+.section_mapa iframe {
+  display: block;
+  margin: 20px auto;
+  color: #ffffff;
+  font-size: 30px;
+}
+.section_mapa p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2d3fa7;
+}
+
+.section_redes {
+  width: 500px;
+  min-width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgba(81, 4, 246, 0.867);
+  grid-template-areas: redes;
+}
+.section_redes .texto_redes {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Square Peg";
+  color: #2d3fa7;
+}
+.section_redes ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 30px;
+  font-size: 50px;
+  color: #2d3fa7;
+  border-radius: 2px;
+}
+
 /* ---- Responsive Mobile Index ---- */
 @media only screen and (min-width: 420px) and (max-width: 768px) {
   .main_index .contain {

@@ -51,39 +51,38 @@
         </nav>
     </header>
     <main class="main_contacto">
-        <section class="section_newsletter">
+        <section class="section_newsletter newsletter">
             <img src="../img/Newsletter.jpg" alt="Newsletter">
-            <h2>Suscribirse al newsletter</h2>
+            <h2 class="Contacto">Suscribirse al newsletter</h2>
             <form action="../form.php" method="post">
-                <input type="email" name="email" id="" placeholder="Ingresa tu Email" required>
-                <input type="submit" value="Suscribirme">
+                <input class="input" type="email" name="email" id="" placeholder="Ingresa tu Email" required>
+                <input class="btn" type="submit" value="Suscribirme">
             </form>
         </section>
-        <section class="section_cv">
+        <section class="section_cv cv">
             <img src="../img/CV.jpg" alt="">
             <h2>Queres trabajar con Nosotros?</h2>
             <form action="cv.php" method="post" enctype="multipart/form-data">
-                <input type="text" name="Nombre y Apellido" id="" placeholder="Nombre y Apellido">
-                <input type="email" name="email" id="" placeholder="Ingresa tu Email" required>
-                <input type="file" name="adjunto" required> 
-                <input type="submit" value="Enviar">
+                <input class="input" type="text" name="Nombre y Apellido" id="" placeholder="Nombre y Apellido">
+                <input class="input" type="email" name="email" id="" placeholder="Ingresa tu Email" required>
+                <input class="input" type="file" name="adjunto" required> 
+                <input class="btn" type="submit" value="Enviar">
             </form>
         </section>
-    </main>
-    <aside>
-        <section class="section_mapa">
+        <section class="section_mapa mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52607.020375805645!2d-58.772181599999996!3d-34.50443645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc981b3f6c41cf%3A0x39d81df507812ac2!2sJos%C3%A9%20C.%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656911694035!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, error, neque quidem dolor voluptates odit veniam praesentium ad necessitatibus officiis qui eaque ducimus saepe earum maxime deserunt nam labore animi? Neque nemo culpa quas ex placeat quae magnam obcaecati quam sit hic laboriosam voluptas ad necessitatibus dignissimos laudantium, doloremque aperiam.</p>
+            <p class="texto_mapa">Ubicado estrategicamente en el centro de Jose C. Paz.<br>
+            Mas de 10 años de experiencia nos avalan; tanto en diseño, como en la ejecucion de los proyectos</p>
         </section>
-        <section class="section_redes">
-            <h2>Seguinos en nuestras redes</h2>
+        <section class="section_redes redes">
+            <h2 class="texto_redes">Seguinos en nuestras redes</h2>
             <ul>
-                <li><a href="https://es-la.facebook.com/" target="_BLANK">Facebook</a></li>
-                <li><a href="https://www.instagram.com/" target="_BLANK">Instagram</a></li>
-                <li><a href="https://ar.linkedin.com/" target="_BLANK">Linkedin</a></li>
+                <li><a href="https://es-la.facebook.com/" target="_BLANK"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_BLANK"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://ar.linkedin.com/" target="_BLANK"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </section>
-    </aside>
+    </main>
     <footer class="footer">
         <img src="../img/Logo Nav y Footer.jpg" class="logo" alt="Logo">
         <h4 class="titulo_logo_footer">V.I. - Arq</h4>
