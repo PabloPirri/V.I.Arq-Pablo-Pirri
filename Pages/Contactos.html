@@ -50,31 +50,76 @@
             </div>
         </nav>
     </header>
+    <h1 class="titulo_sobre_nosotros">Contactate con Nosotros</h1>
     <main class="main_contacto">
-        <section class="section_newsletter newsletter">
+        <section class="newsletter">
             <img src="../img/Newsletter.jpg" alt="Newsletter">
             <h2 class="Contacto">Suscribirse al newsletter</h2>
             <form action="../form.php" method="post">
                 <input class="input" type="email" name="email" id="" placeholder="Ingresa tu Email" required>
-                <input class="btn" type="submit" value="Suscribirme">
+
+                            <!-- Button trigger modal -->
+
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                Suscribirme
+                </button>
+                        
+                            <!-- Modal -->
+            
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h2>Gracias por contactarnos
+                                <br>Pronto nos estaremos poniendo en contacto con vos
+                                </h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </section>
-        <section class="section_cv cv">
+        <section class="cv">
             <img src="../img/CV.jpg" alt="">
             <h2>Queres trabajar con Nosotros?</h2>
             <form action="cv.php" method="post" enctype="multipart/form-data">
                 <input class="input" type="text" name="Nombre y Apellido" id="" placeholder="Nombre y Apellido">
                 <input class="input" type="email" name="email" id="" placeholder="Ingresa tu Email" required>
                 <input class="input" type="file" name="adjunto" required> 
-                <input class="btn" type="submit" value="Enviar">
+
+                            <!-- Button trigger modal -->
+
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                Enviar C.V.
+                </button>
+                                        
+                            <!-- Modal -->
+                            
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h2>Gracias por enviarnos tu C.V.
+                                <br>Pronto nos estaremos poniendo en contacto con vos
+                                </h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dangdata-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </section>
-        <section class="section_mapa mapa">
+        <section class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52607.020375805645!2d-58.772181599999996!3d-34.50443645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc981b3f6c41cf%3A0x39d81df507812ac2!2sJos%C3%A9%20C.%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656911694035!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p class="texto_mapa">Ubicado estrategicamente en el centro de Jose C. Paz.<br>
             Mas de 10 años de experiencia nos avalan; tanto en diseño, como en la ejecucion de los proyectos</p>
         </section>
-        <section class="section_redes redes">
+        <section class="redes">
             <h2 class="texto_redes">Seguinos en nuestras redes</h2>
             <ul>
                 <li><a href="https://es-la.facebook.com/" target="_BLANK"><i class="fa-brands fa-facebook"></i></a></li>
@@ -83,10 +128,10 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container d-flex">
         <img src="../img/Logo Nav y Footer.jpg" class="logo" alt="Logo">
         <h4 class="titulo_logo_footer">V.I. - Arq</h4>
-        <a class="copyright" href="" target="_BLANK"> &copy; PP Web-Design</a> 
+        <a class="copyright" href="../index.html" target="_BLANK"> &copy; PP Web-Design</a> 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

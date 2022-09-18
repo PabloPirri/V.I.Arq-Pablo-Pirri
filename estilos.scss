@@ -32,45 +32,43 @@ body{
 .main_index{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color:$colorPrincipal;
 }
 
 .section_1_index{
-    padding: 110px 20px 77px 20px;
     flex: 2 1 auto;
     align-items: center;
     justify-content: center;
 }
 
 .imagen{
+    width: 90%;
+    max-height: 500px;
+    object-fit: cover;
+    margin: 20px;
     background-color: $colorPrincipal;
-    flex-wrap: wrap;
-    
+    align-items: center;
+
 }
 .titulo_index {
-    left: 39%;
     font-family: $fuenteLogo1;
     font-size: 2.1rem;
     color: $colorLogo;
-    background: #ffffff93;
-    text-align: end;
-    padding-right: 3rem;
+    text-align: center;
     margin-top: -121px;
 }
 
 .subtitulo_index{
-    left: 39%;
     font-family: $fuenteLogo2, cursive;
     color: $colorLogo;
     font-size: 1.5rem;
-    background: #ffffff93;
-    text-align: end;
-    padding-right: 4rem;
-    
+    text-align: center;
 }
 
 .section_2_index{
+    width: 90%;
+    margin: 20px;
     background-color: $colorPrincipal;
     flex: 1 1 auto;
     flex-direction: column;
@@ -79,14 +77,13 @@ body{
     line-height: 1.7rem;
     text-align: center;
     color: $colorLogo;
-    padding: 110px 20px 77px 20px;
 }
 
         /* Footer */
 .footer{
     display: flex;
     background-color:$colorPrincipal;
-    width: 100vw;
+    min-width: 100%;
     height: 76px;
     align-content: center;
     justify-content: center;
@@ -116,7 +113,7 @@ body{
 /* ---------------------------------------- */
 
 .main_diseño{
-    padding-top:75px;
+    // background: #ffffff93;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; 
@@ -276,24 +273,22 @@ body{
         /* ---- Pagina 5 Contactos ---- */
 
 .main_contacto{
-    width: 100vh;
+    justify-items: center;
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 2fr;
     grid-template-areas:
     "newsletter mapa"
     "cv redes";
-    gap: 10px;
 }
 
-.section_newsletter{
+.newsletter{
     width: 500px;
     min-width: 300px;
     border-radius: 10px;
     margin: 10px;
     border: 1px solid rgba(81, 4, 246, 0.867);
-    grid-template-areas: newsletter;
-    // display: flex;
+    grid-area: newsletter;
     & img{
         width: 250px;
         display: block;
@@ -313,16 +308,14 @@ body{
         @include btn
         
     }
-    
 }
-.section_cv{
+.cv{
     width: 500px;
     min-width: 300px;
     border-radius: 10px;
     margin: 10px;
     border: 1px solid rgba(81, 4, 246, 0.867);
-    grid-template-areas: cv;
-    // display: flex;
+    grid-area: cv;
     & img{
         width: 250px;
         display: block;
@@ -343,13 +336,13 @@ body{
         
     }
 }
-.section_mapa{
+.mapa{
     width: 500px;
     min-width: 300px;
     border-radius: 10px;
     margin: 10px;
     border: 1px solid rgba(81, 4, 246, 0.867);
-    grid-template-areas: mapa;
+    grid-area: mapa;
     & iframe{
         display: block;
         margin: 20px auto;
@@ -364,13 +357,13 @@ body{
         color: map-get($map: $colores, $key: "Logo");
     }
 }
-.section_redes{
+.redes{
     width: 500px;
     min-width: 300px;
     border-radius: 10px;
     margin: 10px;
     border: 1px solid rgba(81, 4, 246, 0.867);
-    grid-template-areas: redes;
+    grid-area: redes;
     & .texto_redes{
         text-align: center;
         font-size: 2.2em;
@@ -387,18 +380,20 @@ body{
         color: map-get($map: $colores, $key: "Logo");
         border-radius: 2px;
     }
-
 }
         /* ---- Responsive Mobile Index ---- */
 
 @media only screen and (min-width: 420px) and (max-width: 768px){
 
-    .main_index .contain{
+    .main_index{
         flex-direction: column;
         max-width: 80vw;
     }
     .imagen{
         max-width: 90vw;
+    }
+    .titulo_index{
+        font-size: 1.5rem;
     }
     .section_2_index{
         flex-direction: column;
@@ -406,19 +401,31 @@ body{
     }
 
          /*Mobile --- Diseño  */
+
     .main_diseño{
         grid-template-columns: 1fr;
         max-width: 80vw;
     }
     
-    
         /*Mobile --- Proyectos  */
+
     .main_proyectos{
         padding:50px 0;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         }
 
+        /*Mobile --- Proyectos  */
+
+    .main_contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-template-areas:
+    "newsletter"
+    "cv"
+    "mapa"
+    "redes";
+    }
 }
 
 
@@ -438,7 +445,9 @@ body{
     .main_index{
         flex-direction: column;
         max-width: 80vw;
-
+    }
+    .titulo_index{
+        font-size: 1.5rem;
     }
     .imagen{
         max-width: 80vw;
@@ -464,5 +473,14 @@ body{
         padding:50px 0;
         grid-template-columns: 1fr;
         gap: 20px; 
+    }
+    .main_contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-template-areas:
+    "newsletter"
+    "cv"
+    "mapa"
+    "redes";
     }
 }
